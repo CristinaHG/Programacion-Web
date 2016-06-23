@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7e8bc680-6ae8-4f3b-8d20-cf22fe0fe2e4" name="conection" url="http://bahia.ugr.es">
+        <fileTransfer host="bahia.ugr.es" port="22" rootFolder="/home/x76668203/public_html" accessType="SFTP" password="dfe9dfd8dfc3dfd9dfdadfdddfcfdfc8df98df98" username="x76668203">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

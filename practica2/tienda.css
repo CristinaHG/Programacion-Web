@@ -1,0 +1,812 @@
+
+div.background {
+    background: url(./imagenes/piano.png) ;
+    border: 2px solid black;
+    height:100px;
+    width: 100vw;
+}
+
+div.page{
+	background: url(./imagenes/fono4.jpg);
+	
+}
+
+div.transbox {
+    margin: 25px;
+    background-color: #ffffff;
+    border: 1px  black;
+    height:40px;
+    width:400px;
+    position:relative;
+    left:400px;
+    opacity: 0.7;
+    filter: alpha(opacity=0.6); /* For IE8 and earlier */
+}
+
+div.transbox h1 {
+    font-family: "Century Gothic", Palatino, sans-serif;
+    margin: 1.5%;
+    font-weight:normal;
+    color: black;
+    text-align:center;
+}
+
+
+#button1{
+  float:right;
+}
+
+#publicity {
+    line-height:100px;
+    background-color:#cccccc;
+    height:900px;
+    padding:0%;
+    margin:auto;
+    width: 100px;
+	float:right;
+}
+
+#lateral{
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    background-color:#e6e6e6;
+}
+
+section.acceso{
+   width: 20%;
+   margin: 3%;
+   font-size:70%;
+}
+
+#login{
+color:black;
+}
+
+#discosnovedades{
+	width:970px;
+	height:200px;
+	background-color:#e6e6e6;
+	margin:2.5%;
+	border:  1px solid #660000;
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+section.new{
+	background-color:#ffffff;
+	margin:2%;
+
+}
+#playbutton{
+    border: none;
+    display: inline-block;
+    line-height: 30px;
+    position: relative;
+    text-decoration: none;
+     width: 5px;
+}
+
+#playbutton:before{
+    border: none;
+    content: '';
+    display: block;
+width:0px;
+height:0px;
+position: absolute;
+
+/*background-color:red;*/
+border-top:30px solid  transparent;
+/*border-right:30px solid blue;*/
+
+border-left:30px solid green;
+border-bottom:30px solid  transparent;
+}
+
+#playbutton button{
+    color: black;
+    background: none;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    right:7px;
+    bottom:-20px;
+
+
+}
+section {
+    width:250px;
+    float:right;
+
+}
+
+#genero{
+   border-bottom:2px solid #660000;
+   height:30px;
+}
+
+
+p{text-align:center;
+}
+
+
+#names{
+
+        display:flex;
+	flex-direction:column;
+	height:100px;
+	width:100px;
+	font-size:80%;
+}
+
+#verplay{
+
+	display:flex;
+	flex-direction:column;
+	height:80px;
+	width:50px;
+}
+
+#disco{
+  	display:flex;
+	border:0.8px solid black;
+	flex-direction:row;
+	width:230px;
+	height:190px;
+	background-color:white;
+}
+
+#novedades{
+	border-bottom:2px solid #660000;
+	height:35px;
+
+}
+
+
+
+#novedadesGenero{
+    background-color:#e6e6e6;
+    width:250px;
+	height:850px;
+	margin:2%;
+	margin-top: 0%;
+	border: 2px solid #660000;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+#psecciones{
+  margin:0%;
+}
+
+#rock{
+	color:red;
+}
+
+#pop{
+	color:orange;	
+}
+
+#clasica{
+	color:green;
+}
+
+#metal{
+	color:#ffff00;
+
+}
+
+
+#Secciones{
+	margin-right:2%;
+	background-color:#e6e6e6;
+	width:700px;
+	height:20px;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+	justify-content:space-between;
+	
+}
+
+section.masComentados{
+	margin:2%;
+	background-color:#e6e6e6;
+	border:2px solid #660000;
+	width:325px;
+	height:270px;
+
+}
+
+#cabeceranoticias{
+	color:black;
+	border-bottom:2px solid #660000;
+	height:30px;
+	width:325px;
+
+}
+
+section.noticias{
+	margin:2%;
+	background-color:#e6e6e6;
+	width:325px;
+	height:270px;
+	display:flex;
+	flex-direction:column;
+	border: 2px solid #660000;
+}
+
+#fila1{
+	margin:2%;
+	width:700px;
+	height:290px;
+	display:flex;
+	flex-direction:row;
+}
+
+#fila2{
+	margin:2%;
+	width:700px;
+	height:290px;
+	display:flex;
+	flex-direction:row;
+}
+
+section.ultimosDiscos{
+
+	background-color:#e6e6e6;
+	border:2px solid #660000;
+	width:700px;
+	height:300px;
+	display:flex;
+	flex-direction:column;
+	margin-right:2%;
+}
+
+#cabezeraultimos{
+	color:black;
+	border-bottom:2px solid #660000;
+	height:30px;
+	width:700px;
+}
+
+#categ{
+	color:red;
+	border:1px solid black;
+	height:30px;
+	width:80px;
+}
+
+#categorias{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+#discosUlti{
+display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+
+}
+
+#SeccionesClasica{
+	margin:2%;
+	background-color:#e6e6e6;
+	width:75vw;
+	height:20px;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+	justify-content:space-between;
+
+
+
+}
+
+#SeccionClasica{
+	margin:2%;
+	color:white;
+	background-color:green;
+	border:2px solid black;
+	height:70px;
+	width:75vw;
+	display:flex;
+	flex-direction:row;
+}
+
+#vendidoMasDestacado{
+	margin:2%;
+	background-color:#e6e6e6;
+	width:670px;
+	height:200px;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+	align-items:        center;
+	justify-content:space-between;
+
+}
+
+#textoMasVendido{
+	width:200px;
+	height:150px;
+	display:flex;
+	flex-direction:column;
+	align-items: flex-start;
+
+
+}
+
+#comentarios{
+	margin:2%;
+	background-color:white;
+	border: 2px solid black;
+	height:35px;
+	width:140px;
+}
+
+#columna1{
+	margin:1%;
+	height:140px;
+	width:150px;
+	justify-content: center;
+}
+
+section.DiscosmasComentados{
+	margin:1.15%;
+	background-color:#e6e6e6;
+	width:325px;
+	height:150px;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+	justify-content: flex-end;
+	
+}
+
+
+#SeccionDisco{
+	background-color:#e6e6e6;
+	border: 2px solid #660000;
+	width:53%;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	margin-right:1%;
+}
+
+
+.SeccionDiscoDescripcion{
+	background-color:#e6e6e6;
+	margin:1%;
+	width:57%;
+	height:120%;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+}
+
+#parte1{
+	margin:1%;
+	height:80%;
+	width:150px;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+}
+
+#parte2{
+	margin:1%;
+	height:97%;
+	width:88%;
+	display:flex;
+	flex-direction:column;
+	justify-content: flex-start;
+
+}
+
+
+
+div.circle{
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background:#e6ac00;
+
+}
+
+.circle{
+	background:#99cc00;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+}
+
+
+#circulos{
+	display:flex;
+	flex-direction:row;
+	justify-content: center;
+}
+
+#duration{
+	width:70px;
+	height:35px;
+	border: 2px solid #660000;
+}
+
+#track{
+	background-color:white;
+	width:500px;
+	height:60px;
+	border: 2px solid #660000;
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content:space-between;	
+}
+
+#playList{
+	width:50px;
+	height:60px;
+}
+
+#CommentsBuyPlay{
+	width:500px;
+	height:60px;
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+
+}
+
+#comments {
+	margin: 0%;
+	width: 50%;
+	display: flex;
+	flex-direction:column;
+}
+
+#cabezeraCom{
+	text-align: left;
+	margin: 0px;
+}
+#commentInd{
+	background-color:forestgreen;
+	border: 1px solid #660000;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+}
+
+#commentBox{
+	background-color:floralwhite;
+	border-bottom: 1px solid #660000;
+	width: 100%;
+}
+
+#campoComentaForm{
+	width: 100px;
+	height: 135px;
+}
+#formComments{
+
+	position: absolute;
+	top: 150%;
+	right:50%;
+
+}
+#SuscripcionTitulo{
+	margin-right:2%;
+	width:70%;
+	height:60px;
+	border: 2px solid #660000;
+	background-color:#e6e6e6;
+}
+
+#SuscripcionSubTitulo{
+	margin-right:2%;
+	margin-top:1%;
+	width:70%;
+	height:40px;
+	border: 2px solid #660000;
+	background-color:#e6e6e6;
+}
+
+#formulario{
+	margin-right:2%;
+	margin-top:1%;
+	width:50%;
+	height:90%;
+	border: 2px solid #660000;
+	background-color:#e6e6e6;
+	display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-content:         center;
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    padding:5px;
+    height:50px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+.disktracks{
+	background-color: yellow;
+	visibility: hidden;
+	position: absolute;
+}
+.imgContainer:hover .disktracks { visibility:visible}
+
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltiptext {
+	visibility: hidden;
+	position: absolute;
+	top: 10%;
+	left:10%;
+	opacity: 1;
+	color: white;
+	background: forestgreen;
+	box-shadow: 1px 1px 2px white;
+	padding: 10px;
+	width: 120%;
+	overflow-x: scroll;
+	height: 100%;
+}
+
+
+.tooltip:hover .tooltiptext, .tooltip:hover {
+	visibility: visible;
+	opacity: 1;
+}
+
+@media(max-width:480px){
+
+div.background {
+    	height:50px;
+    	width: 100vw;
+}
+
+div.transbox {
+    margin: 25px;
+    background-color: #ffffff;
+    border: 1px  black;
+    height:30px;
+    width:55%;
+    position:relative;
+    left:45px;
+    opacity: 0.7;
+    filter: alpha(opacity=0.6); /* For IE8 and earlier */
+}
+
+div.transbox h1 {
+    font-family: "Century Gothic", Palatino, sans-serif;
+    margin: 1.5%;
+    font-weight:normal;
+    color: red;
+    text-align:center;
+    font-size:90%;
+}
+
+#publicity {
+    line-height:50px;
+    background-color:#cccccc;
+    height:200px;
+    padding:0%;
+    margin:0%;
+    width: 55%;
+    display:block;
+}
+
+#lateral{
+    width:180px;
+    height:300px;
+    
+}
+
+section.acceso{
+   width: 10%;
+   margin: 3%;
+   font-size:30%;
+}
+
+#discosnovedades{
+	width:190px;
+	height:270px;
+	background-color:#e6e6e6;
+	margin-right:0.5%;
+	border:  1px solid #660000;
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	content-align:center;
+}
+
+h4{
+	font-size:70%;
+}
+
+a{ font-size:50%}
+
+section.new{
+	background-color:#ffffff;
+	margin:2%;
+	display:flex;
+	flex-direction:column;
+	width:95%;
+	height:70%;
+	content-align:center;
+
+}
+#playbutton{
+    border: none;
+     display: block;
+    position: relative;
+    text-decoration: none;
+     width: 1px;
+}
+
+#playbutton:before{
+    border: none;
+    content: '';
+    display: block;
+width:0px;
+height:0px;
+position: absolute;
+
+}
+#playbutton button{
+    color: black;
+    background: none;
+    border: none;
+    font-weight: bold;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    left:10px;
+    bottom:20px;
+}
+
+p{
+text-align:center;
+font-size:80%;
+}
+
+
+#names{
+
+        display:flex;
+	flex-direction:column;
+	height:100px;
+	width:100px;
+	font-size:60%;
+}
+
+#verplay{
+
+	display:flex;
+	flex-direction:column;
+	height:80px;
+	width:50px;
+}
+
+#disco{
+  	display:flex;
+	border:0.8px solid black;
+	flex-direction:row;
+	width:350px;
+	height:130px;
+	background-color:white;
+}
+
+#novedadesGenero{
+	margin-top: 1%;
+	height:80%;
+	display: none;
+}
+
+#psecciones{
+  margin:0%;
+}
+
+#Secciones{
+	margin:1%;
+	background-color:#e6e6e6;
+	width:370px;
+	height:20px;
+	display:flex;
+	flex-direction:row;
+	border: 2px solid #660000;
+	justify-content:space-between;
+	
+}
+
+section.masComentados{
+	display:none;
+}
+
+#fila1{
+	margin:2%;
+	width:700px;
+	height:290px;
+	display:none;
+	flex-direction:row;
+}
+
+#fila2{
+	margin:2%;
+	width:700px;
+	height:290px;
+	display:none;
+	flex-direction:row;
+}
+
+section.ultimosDiscos{
+	background-color:#e6e6e6;
+	border:2px solid #660000;
+	width:380px;
+	height:600px;
+	display:flex;
+	flex-direction:column;
+	
+}
+
+#cabezeraultimos{
+	color:black;
+	border-bottom:2px solid #660000;
+	margin-right:50%;
+	height:30px;
+	width:700px;
+}
+
+#categ{
+	color:red;
+	border:1px solid black;
+	height:30px;
+	width:80px;
+}
+
+#categorias{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+#discosUlti{
+display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    padding:5px;
+    height:150px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+}
+
+
