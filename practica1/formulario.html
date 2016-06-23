@@ -1,0 +1,157 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./tienda.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+<div class="page">
+
+ <div class="background">
+  <div class="transbox">
+    <h1>le coffre de ma musique</h1>
+  </div>
+</div>
+
+<section id=lateral>
+<section class="acceso">
+<form id="login" action="procesar.php" method="post" name="f1">
+		<fieldset>
+			Usuario:
+			<input type="text" name=usuario value="" placeholder="usuario">
+			Contraseña:
+			<input type="text" name=passwd value="" >
+      <input type = "submit" id = "button1" value = "Acceder"/>
+      </fieldset>
+</form>
+</section>
+
+
+<nav id="publicity">
+Aquí <br>
+va <br>
+la publicidad
+</nav>
+
+</section>
+
+
+
+<section id="SeccionesClasica">
+<h4 id="psecciones">Secciones | Generos: </h4>
+<a id="rock" href="#" color="green"> ROCK  </a>
+<a id="pop" href="#"> POP </a>
+<a id= "clasica" href="#"> CLASICA </a>
+<a id= "metal" href="#"> METAL </a>
+<a href="#"> Más vendido </a>
+<a href="#"> Más Comentado </a>
+<a href="#"> Suscripción </a>
+</section>
+
+
+<section id="SuscripcionTitulo">
+	<h1>Suscripción al servicio</h1>
+</section>
+
+<section id="SuscripcionSubTitulo">
+	<h3>Suscripción al servicio</h3>
+</section>
+
+<section id="formulario">
+	<section>
+	<form action="procesar.php" method="post" name="f1">
+		<fieldset>
+			Nombre:
+			<input type="text" name="nombre" value="" placeholder="escribe aquí tu nombre">
+			Apellidos:
+			<input type="text" name="apellidos" value="" placeholder="escribe aquí tus Apellidos">
+			Nombre Usuario:
+			<input type="text" name="usuario" value="" placeholder="escribe aquí tu username">
+			Clave:
+			<input type="text" name="password" value="" placeholder="**********">
+			Dirección postal:
+			<input type="text" name="direccion" value="" placeholder="escribe tu drección">
+			Ciudad:
+			<input type="text" name="ciudad" value="" placeholder="ciudad">
+			Código postal:
+			<input type="text" name="cp" value="" placeholder="código postal">
+
+			<label for="lista1">Provincia:</label>
+			<datalist id="provincia">
+			<option value="Granada"></option>
+			<option selected value="Almería"></option>
+			<option value="Castilla"></option>
+			<option value="La Rioja"></option>
+			<option value="Asturias"></option>
+			<option value="Alicante"></option>
+			<option value="Toledo"></option>
+			<option value="Madrid"></option>
+			<option value="otros"></option>
+			</datalist>
+			<input type="text" id="idmedios" list="provincia">			
+
+
+			Correo:
+			<input type="text" name="correo" value="" placeholder="escribe aquí tu e-mail">
+
+			Dni:
+			<input type="text" name="DNi" value="" placeholder="escribe aquí tu dni">
+			VISA:
+			<input type="text" name="VISA" value="" placeholder="">
+			Observaciones:
+			<input type="text" name="observaciones" value="">
+
+			<legend>Envío:</legend>
+			<label for="radiobutton1">Mensual</label>
+			<input type="radio" id="radiobutton1" name="yes" value="" checked>
+			<label for="radiobutton2">Semanal</label>
+			<input type="radio" id="radiobutton2" name="no" value="" >
+			<label for="radiobutton2">Diario</label>
+			<input type="radio" id="radiobutton2" name="no" value="" >
+				
+		
+		He leído y acepto las condiciones del servicio de suscripción:
+		<input type="checkbox" id = "button2" value = "He leído y acepto las condiciones del servicio de suscripción" checked/> 
+		<input type = "submit" id = "button1" value = "enviar Suscripción"/> 
+		</fieldset>
+	</form>
+
+</section>
+
+</section>
+
+
+
+
+
+<footer>
+<p>Autora: Mª Cristina Heredia Gómez</p>
+<p>Contacto: lecoffredemaMusique@gmail.com</p>
+<p>Rue de la joie s/n, bajo B</p>
+<p>tlf:958958958</p>
+<a href="./formulario.html"> Subscribete! </a>
+</footer>
+</div>
+
+
+<?php
+require_once('configuracion.php'); 
+$conexion = new PDO( DB_DSN, DB_USUARIO, DB_CONTRASENIA );
+$consultaSQL = "SELECT * FROM Libros WHERE titulo LIKE '%".$_POST["busqueda"]."%';"; 
+$resultados = $conexion->query( $consultaSQL ); 
+foreach($resultados as $fila){
+echo "titulo=" .$fila["titulo"]. "<br/>";
+
+}
+
+?>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
